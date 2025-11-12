@@ -16,5 +16,17 @@
 |[nvim-tree/nvim-tree](https://github.com/nvim-tree/nvim-tree.lua) | File Tree explorer | [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) |
 |[neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) | Plugin to manage [LSP config](https://en.wikipedia.org/wiki/Language_Server_Protocol) for each programming language | See [LSP Config](#lsp-config) |
 
+
+## Key Mapping and Commands
+| Key | Description |
+|----|-----|
+|`<space>` | Leader key |
+
+
+| Command | Description |
+|--------|--------|
+|`:Lazy`|opens Lazy.nvim package manager window |
+|`:Mason`|opens the Lsp config window|
+
 ## LSP Config
 - TODO: document cpp/java etc
