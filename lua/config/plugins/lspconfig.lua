@@ -5,10 +5,11 @@ return {
 	},
 	config = function()
 		vim.lsp.config("clangd", {
-			cmd = { "clangd",
-				"--query-driver=/C:/dev/apps/Microsoft\\ Visual\\ Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe"
-			}
-		})
+			--cmd = { "clangd"
+			--	"--query-driver=/C:/dev/apps/Microsoft\\ Visual\\ Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe"
+		}
+		--	}
+		)
 
 		local capabilities = require('blink.cmp').get_lsp_capabilities()
 		vim.lsp.config("lua_ls", { capabilites = capabilities })

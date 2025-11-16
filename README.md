@@ -28,5 +28,13 @@
 |`:Lazy`|opens Lazy.nvim package manager window |
 |`:Mason`|opens the Lsp config window|
 
+## Plugin Key Mappings and Commands
+
+### nvim-tree
+| Command | Description |
+|--------|--------|
+|`'n' <leader>e` | Toggle the tree |
+|`'n' g?`| toggles the help diaglon with a list of nvim-tree commands. |
+
 ## LSP Config
 - TODO: document cpp/java etc
