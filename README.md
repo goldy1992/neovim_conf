@@ -21,6 +21,7 @@
 | Key | Description |
 |----|-----|
 |`<space>` | Leader key |
+|`<Esc><C-\><C-n>` | Escape terminal mode! |
 
 
 | Command | Description |

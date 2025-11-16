@@ -29,8 +29,11 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set('n', '<leader>e', '<CMD> NvimTreeToggle <CR>')
-vim.o.shell =
-"powershell.exe -noe -c \"&{Import-Module \"\"\"C:\\dev\\apps\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell 0dc85aab}\""
+vim.o.shell = "powershell.exe"
+vim.o.shellcmdflag =
+'-NoLogo -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new();$PSDefaultParameterValues[\'Out-File:Encoding\']=\'utf8\';'
+vim.o.shellquote = '"'
+vim.o.shellxquote = ''
 --
 -- Setup lazy.nvim
 require("lazy").setup({
